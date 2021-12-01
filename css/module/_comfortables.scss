@@ -1,0 +1,50 @@
+.comfort {
+  display: flex;
+  justify-content: space-between;
+  background: #222224;
+  &__item {
+    width: 360px;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: #fbfbfb;
+    & img {
+      align-self: center;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  & h4 {
+    font-size: $fontSize + 10;
+    font-weight: 300;
+  }
+  & p {
+    font-size: $fontSize;
+    font-weight: 200;
+  }
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__item {
+  width: 360px;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer__item img {
+  align-self: center;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 30px;
+}

@@ -6,7 +6,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="/css/style.css" />
 <title>Main page</title>
 <script src="https://kit.fontawesome.com/3a6d36c81e.js" crossorigin="anonymous"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,21 +14,21 @@
 </head>
 
 <body>
-  <header>
+  <div class="header">
     <div class="header__wrap container">
       <div class="header__left">
-        <a href="https://worldofwarcraft.com/ru-ru/">
+        <a href="index.html">
           <img src="image/logo.png" alt="logo" />
         </a>
         <img src="image/search.png" alt="search" />
       </div>
       <div class="header__right">
         <img src="image/burger.png" alt="burger__menu" />
-        <img src="image/account.png" alt="account" />
-        <img src="image/buy.png" alt="buy" />
+        <a href="registration.html"><img src="image/account.png" alt="account" /></a>
+        <a href="cart.html"><img src="image/buy.png" alt="buy" /></a>
       </div>
     </div>
-  </header>
+  </div>
 
   <main>
     <section class="promo">
@@ -68,7 +67,7 @@
         <div class="container">
           <div class="product__wrap">
             <div class="card">
-                <img src="image/beard_man.png" alt="beard_man" />
+                <a href="product.html"><img src="image/beard_man.png" alt="beard_man" /></a>
               <div class="card__text">
                 <h4>ELLERY X M'O CAPSULE</h4>
                 <p>
@@ -80,8 +79,8 @@
               </div>
             </div>
 
-                        <div class="card">
-                <img src="image/beard_man.png" alt="beard_man" />
+            <div class="card">
+                <a href="product.html"><img src="image/beard_man.png" alt="beard_man" /></a>
               <div class="card__text">
                 <h4>ELLERY X M'O CAPSULE</h4>
                 <p>
@@ -93,8 +92,8 @@
               </div>
             </div>
 
-                        <div class="card">
-                <img src="image/beard_man.png" alt="beard_man" />
+            <div class="card">
+                <a href="product.html"><img src="image/beard_man.png" alt="beard_man" /></a>
               <div class="card__text">
                 <h4>ELLERY X M'O CAPSULE</h4>
                 <p>
@@ -106,8 +105,8 @@
               </div>
             </div>
 
-                        <div class="card">
-                <img src="image/beard_man.png" alt="beard_man" />
+            <div class="card">
+                <a href="product.html"><img src="image/beard_man.png" alt="beard_man" /></a>
               <div class="card__text">
                 <h4>ELLERY X M'O CAPSULE</h4>
                 <p>
@@ -119,8 +118,8 @@
               </div>
             </div>
 
-                        <div class="card">
-                <img src="image/beard_man.png" alt="beard_man" />
+            <div class="card">
+                <a href="product.html"><img src="image/beard_man.png" alt="beard_man" /></a>
               <div class="card__text">
                 <h4>ELLERY X M'O CAPSULE</h4>
                 <p>
@@ -132,8 +131,8 @@
               </div>
             </div>
 
-                        <div class="card">
-                <img src="image/beard_man.png" alt="beard_man" />
+            <div class="card">
+                <a href="product.html"><img src="image/beard_man.png" alt="beard_man" /></a>
               <div class="card__text">
                 <h4>ELLERY X M'O CAPSULE</h4>
                 <p>
@@ -147,53 +146,52 @@
 
           </div>
         </div>
-        <div class="link"><a class="link__browse" href="#">Browse All Product</a></div>
     </section>
+    <div class="link">
+          <a class="link__browse" href="catalog.html">Browse All Product</a>
+    </div>
   </main>
 
-  <footer>  
-        <!-- footer top -->
-        <div class="footer__top container footer__wrap">
-          <div class="footer__item">
-            <img src="image/car.png" alt="" />
-            <div class="footer__heading">Free Delivery</div>
-            <div class="footer__text">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innov tion with extensive models.
+        <div class="comfort">
+          <div class="footer__wrap container">
+            <div class="comfort__item">
+              <img src="image/car.png" alt="" />
+              <h4>Free Delivery</h4>
+                <p>
+                  Worldwide delivery on all. Authorit tively morph next-generation
+                  innov tion with extensive models.
+                </p>
             </div>
-          </div>
-
-          <div class="footer__item">
-            <img src="image/percent.png" alt="" />
-            <div class="footer__heading">Sales & discounts</div>
-            <div class="footer__text">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innov tion with extensive models.
+            <div class="comfort__item">
+              <img src="image/percent.png" alt="" />
+              <h4 class=>Sales & discounts</h4>
+                <p>
+                  Worldwide delivery on all. Authorit tively morph next-generation
+                  innov tion with extensive models.
+                </p>
             </div>
-          </div>
-
-          <div class="footer__item">
-            <img src="image/crown.png" alt="" />
-            <div class="footer__heading">Quality assurance</div>
-            <div class="footer__text">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innov tion with extensive models.
+            <div class="comfort__item">
+              <img src="image/crown.png" alt="" />
+              <h4>Quality assurance</h4>
+                <p>
+                  Worldwide delivery on all. Authorit tively morph next-generation
+                  innov tion with extensive models.
+                </p>
             </div>
           </div>
         </div>
-        <!-- footer top -->
-
-        <div class="footer__center">
-          <div class="back">
-            <div class="container mini__wrap">
-              <div class="subs__info">
+        
+  <div class="footer">  
+          <div class="footer__background">
+            <div class="container footer__wrap">
+              <div class="footer__info">
                 <img src="image/subs.png" alt="SUBSCRIBE" />
-                <p class="subs__text">
+                <p>
                   “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
                 </p>
               </div>
-              <div class="subs__describe">
-                <p class="subs__text">
+              <div class="footer__describe">
+                <p>
                   SUBSCRIBE <br />FOR OUR NEWLETTER AND PROMOTION
                 </p>
                 <br>
@@ -204,12 +202,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- footer bottom -->
+
         <div class="footer__bottom container">
-          <div class="rights">
             <span>&#169 2021 Brand All Rights Reserved.</span>
-          </div>
           <div class="links">
             <a class="fab fa-facebook-square" href="https://www.facebook.com/">
             </a>
@@ -218,8 +213,7 @@
             <a class="fab fa-twitter-square" href="https://twitter.com/"></a>
           </div>
         </div>
-        <!-- footer bottom -->
-  </footer>
+  </div>
 </body>
 
 </html>

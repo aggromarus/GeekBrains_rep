@@ -1,0 +1,36 @@
+.heading {
+  color: #f8f3f4;
+  height: 148px;
+  padding: 60px 0 60px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    & p {
+      font-size: $fontSize + 10;
+      color: #f16d7f;
+    }
+  }
+  &__nav {
+    display: flex;
+  }
+  &__breadcrumb li {
+    color: #636363;
+    list-style: none;
+    display: inline;
+    font-size: $fontSize;
+  }
+  &__breadcrumb li + li:before {
+    color: black;
+    content: "/\00a0";
+    padding: 8px;
+  }
+  &__breadcrumb a {
+    color: #5e5e5e;
+    text-decoration: none;
+    &:hover {
+      color: #f16d7f;
+    }
+  }
+}
