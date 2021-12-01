@@ -8,8 +8,16 @@ $mainColor: #f16d7f;
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Lato";
+}
+
+fieldset {
+  border: 0 none;
 }
 
 .container {
@@ -415,6 +423,61 @@ body {
     padding: 16px 40px;
     font-size: $fontSize;
     font-weight: 300;
+  }
+}
+
+.registration {
+  display: flex;
+  justify-content: space-between;
+  &__form {
+    font-size: $fontSize + 2;
+    &--field {
+      border: 1px solid #a4a4a4;
+      margin-top: 20px;
+      width: 346px;
+      height: 45px;
+      padding-left: 16px;
+    }
+    &--radio {
+      font-size: $fontSize - 3;
+      margin-top: 31px;
+    }
+    &--btn {
+      font-size: $fontSize;
+      background: $mainColor;
+      border: none;
+      color: #ffffff;
+      padding: 16px 66px 17px 29px;
+      margin-bottom: 96px;
+    }
+    &--btn:hover{
+      background: grey;
+    }
+  }
+  fieldset:last-child {
+    margin-top: 35px;
+    & p {
+      font-size: $fontSize - 1;
+      color: #b1b1b1;
+      margin-top: 16px;
+      width: 359px;
+      margin-bottom: 40px;
+    }
+  }
+  &__loyalty {
+    width: 652px;
+    font-size: $fontSize + 10;
+    color: #000;
+    font-weight: 300;
+    & p:not(:first-child):not(:nth-child(2))::before {
+      content: url(../image/point.svg);
+      margin-top: 16px;
+      padding-right: 23px;
+    }
+    & p:first-child,
+    :nth-child(2) {
+      margin-bottom: 20px;
+    }
   }
 }
 

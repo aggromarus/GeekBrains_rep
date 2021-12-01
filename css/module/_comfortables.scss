@@ -9,12 +9,21 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    color: #fbfbfb;
     & img {
       align-self: center;
     }
     &:not(:last-child) {
       margin-right: 30px;
     }
+  }
+  & h4 {
+    font-size: $fontSize + 10;
+    font-weight: 300;
+  }
+  & p {
+    font-size: $fontSize;
+    font-weight: 200;
   }
 }
 
