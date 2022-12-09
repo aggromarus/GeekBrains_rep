@@ -3,14 +3,18 @@ class ProductList {
         this.container = container;
         this.goods = []; //сюда добавляется весь список товаров из fetchProducts
         this.allProducts = []; //массив в который рендерятся новые объекты класса ProductItem после ProductList.render()
-        this._fetchProducts();
+        this._getProducts()
     }
-    _fetchProducts() {
-        this.goods = [
-            { id: 1, title: 'ELLERY X MO CAPSULE', price: 100, description: "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi. " },
-            { id: 2, title: 'Shirt', price: 50, description: "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi. " },
-            { id: 3, title: 'Hat', price: 10, description: "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi. " },
-        ];
+    _getProducts() {
+        fetch('json/catalogData.json')
+            .then(result => result.json())
+            .then(data => {
+                this.goods = [...data]
+                this.render()
+            })
+            .catch(error => {
+            console.log(error)
+        })
     }
     render() {
         const block = document.querySelector(this.container); //this.container соответствует container из конструктора класса ProductList
