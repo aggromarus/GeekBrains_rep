@@ -1,3 +1,25 @@
+// class ProductBusket {
+//     constructor()
+// }
+
+
+// class Card {
+//     constructor(product) {
+//         this.title = product.title;
+//         this.price = product.price;  
+//     }
+//     render() {
+//         return `<div class="card">
+//         <a href="product.html"><img src="image/beard_man.png" alt="beard_man" /></a>
+//         <h4>${this.title}</h4>
+//         <p class="card__price">${this.price}$</p>
+//         <button class=""buy-btn>Buy</button>
+//                 </div>`
+//     }
+// }
+
+
+
 class ProductList {
     constructor(container = '.product') {
         this.container = container;
@@ -47,7 +69,6 @@ class ProductItem {  //класс карточки товара
 }
 
 let list = new ProductList();
-list.render();
 
 // //исходный массив товаров
 // const products = [
