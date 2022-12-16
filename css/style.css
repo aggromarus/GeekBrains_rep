@@ -370,7 +370,7 @@ fieldset {
   display: block;
 } */
 
-.cart {
+/* .cart {
   position: absolute;
   z-index: 99;
   top: 75px;
@@ -378,9 +378,13 @@ fieldset {
   background: #FFFFFF;
   width: 392px;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+} */
+
+.btn-cart{
+  background-color: #000;
 }
 .invisible {
-  display: block;
+  display: none;
 }
 .cart__container {
   padding: 16px 16px 0 16px;
@@ -632,7 +636,9 @@ fieldset {
   text-decoration: none;
   margin-right: 41px;
 }
-
+.header__right{
+  display: flex;
+}
 .header__right img:not(:last-child) {
   margin-right: 33px;
 }
